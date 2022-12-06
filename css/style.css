@@ -1,0 +1,102 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+main {
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+small {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  max-width: 500px;
+  padding: 5px;
+}
+
+
+.img-holder {
+  max-width: 500px;
+  margin: auto;
+}
+
+.img-holder>img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, .6);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.btn {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  z-index: 2;
+  border: 1px solid;
+}
+
+label.btn:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+label.btn:active {
+  transform: scale(.9);
+}
+
+.animate {
+  animation: animation 1s ease-in;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+/* @media all and (min-width: 576px) {} */
